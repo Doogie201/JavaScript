@@ -11,6 +11,8 @@ module.exports = {
     "extends": ["prettier"],
     "extends": ["plugin:prettier/recommended"],
     "extends": ["airbnb"],
+    "extends": ["plugin:react/recommended"],
+    //"extends": ["eslint:all", "plugin:react/all"],
     "globals": {
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
@@ -28,7 +30,7 @@ module.exports = {
         "react"
     ],
     "rules": {
-        "react/jsx-JavaScript-js": [1, {
+        "react/jsx-filename-extension": [1, {
             "extensions": [".js", ".jsx"] }],
         "semi": ["error", "always"],
         "quotes": ["error", "double"],
